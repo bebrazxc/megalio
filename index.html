@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Megalio Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="startScreen" class="modal">
+    <div class="modal-content">
+      <div class="logo">MEGALIO</div>
+      <h1>Megalio Runner</h1>
+      <p>Collect carrots, avoid spikes, and see how far you can go!</p>
+      <button id="startBtn">Start Game</button>
+    </div>
+  </div>
+  <canvas id="gameCanvas" width="800" height="400" style="display:none;"></canvas>
+  <div id="score" style="display:none;">Score: 0</div>
+  <div id="gameOverScreen" class="modal" style="display:none;">
+    <div class="modal-content">
+      <div class="logo">MEGALIO</div>
+      <h2>Game Over!</h2>
+      <p id="finalScore"></p>
+      <button id="playAgainBtn">Play again</button>
+      <button id="backToMenuBtn">Back to Menu</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

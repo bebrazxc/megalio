@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #18192a; /* тёмно-синий фон сайта */
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  display: block;
+  background: url('assets/clouds.png') center/cover no-repeat, transparent;
+  position: relative;
+  z-index: 2;
+  filter: brightness(1.2) contrast(1.2);
+}
+
+#score {
+  font-size: 24px;
+  color: #fff;
+  text-align: right;
+  margin: 20px 60px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  text-shadow: 0 2px 8px #000;
+}
+
+#gameOver {
+  font-size: 32px;
+  color: red;
+  margin-top: 20px;
+}
+
+#leaderboard {
+  background: #fff;
+  border: 2px solid #333;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 350px;
+}
+
+#leaderboard h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+#leaderboardList {
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(20, 20, 20, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: #181818;
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+  text-align: center;
+  color: #fff;
+  min-width: 320px;
+  position: relative;
+}
+
+.logo {
+  font-family: 'Segoe UI Black', Arial, sans-serif;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  opacity: 0.2;
+}
+
+button {
+  background: #fff;
+  color: #181818;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px 8px 0 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+  background: #181818;
+  color: #fff;
+  border: 1px solid #fff;
+}
